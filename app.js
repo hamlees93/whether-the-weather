@@ -20,6 +20,4 @@ app.use(bodyParser.json());
 app.use(require(`./routes`));
 
 //Not essential, but a nice touch
-server.listen(port, () => {
-    console.log("App is running on port " + port);
-});
+server.listen(process.env.PORT || port);
