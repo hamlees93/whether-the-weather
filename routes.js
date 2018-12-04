@@ -1,7 +1,7 @@
 const express = require(`express`);
 const router = express.Router();
-const contactController = require(`./controllers/contact_controller`);
+const drinkController = require(`./controllers/drinks_controller`);
 
-router.get(`/`, contactController.newResource);
+router.get(`/`, drinkController.index);
 
 module.exports = router;
