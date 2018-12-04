@@ -1,0 +1,43 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@import 'main_page';
+@import 'font';
+
+.forecast {
+    @extend %white_font;
+    width: 55%;
+}
+
+.readable-white-font {
+    @extend %white_font;
+}
+
+#drink {
+    font-weight: bold; 
+    font-size: 1.5em;
+}
+
+#more-info {
+    display: none;
+}
+
+#half-width {
+    width: 50%;
+}
+
+.table-head {
+    background: #836E4D;
+}
+
+.table-body {
+    background: #ECE7CE;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #fff;
+    cursor: pointer;
+}

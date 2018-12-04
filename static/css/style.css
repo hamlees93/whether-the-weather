@@ -1,0 +1,64 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+#home {
+  display: none;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  background-image: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#landing-page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  background-image: url("../images/weather.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#multiple-results {
+  display: none;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  background-image: url("../images/confirmation.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center; }
+
+.forecast, .readable-white-font {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+.forecast {
+  width: 55%; }
+
+#drink {
+  font-weight: bold;
+  font-size: 1.5em; }
+
+#more-info {
+  display: none; }
+
+#half-width {
+  width: 50%; }
+
+.table-head {
+  background: #836E4D; }
+
+.table-body {
+  background: #ECE7CE; }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #fff;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

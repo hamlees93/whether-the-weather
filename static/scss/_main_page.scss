@@ -1,0 +1,21 @@
+@mixin display_and_image($display, $bground-image) {
+    display: $display;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    background-image: $bground-image;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#home { 
+    @include display_and_image(none, none); 
+}
+#landing-page { 
+    @include display_and_image(flex, url("../images/weather.jpg")); 
+}
+#multiple-results { 
+    @include display_and_image(none, url("../images/confirmation.jpg"));
+    align-items: center; 
+}
