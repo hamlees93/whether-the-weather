@@ -109,19 +109,19 @@ function changeBackground() {
 let average = (Number(data[i].high) + Number(data[i].low))/2;
 // Depending on the average temp, will depend on what to drink!
 if (average > 35) {
-    home.style.backgroundImage = 'url("./static/images/cider.jpg")';
+    home.style.backgroundImage = 'url("./public/images/cider.jpg")';
     drink.textContent = 'Cider!';
 } else if (average > 30) {
-    home.style.backgroundImage = 'url("./static/images/rose.jpg")';
+    home.style.backgroundImage = 'url("./public/images/rose.jpg")';
     drink.textContent = 'Rose!';
 } else if (average > 25) {
-    home.style.backgroundImage = 'url("./static/images/beer.jpg")';
+    home.style.backgroundImage = 'url("./public/images/beer.jpg")';
     drink.textContent = 'Beer!';
 } else if (average > 20) {
-    home.style.backgroundImage = 'url("./static/images/white-wine.jpg")';
+    home.style.backgroundImage = 'url("./public/images/white-wine.jpg")';
     drink.textContent = 'White Wine!';
 } else {
-    home.style.backgroundImage = 'url("./static/images/red-wine.jpg")';
+    home.style.backgroundImage = 'url("./public/images/red-wine.jpg")';
     drink.textContent = 'Red Wine!';
 };
 };
