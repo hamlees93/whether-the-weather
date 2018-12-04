@@ -1,0 +1,44 @@
+
+    <div id="home">
+        <div class="forecast m-4 rounded">
+            <div class="text-center mt-3 text-monospace" id="forecast-info">
+                <h3>In <span id="city-name"></span>, on <span id="day"></span>, you should drink...</h3>
+                <h1><span id="drink"></span></h1>
+                <div class="text-center my-4">
+                    <button class="m-1 btn btn-outline-info" id="more-info-btn">More Info</button>
+                </div>
+                <div id="more-info">
+                    <h6>High: <span id="high"></span></h6>
+                    <h6>Low: <span id="low"></span></h6>
+                    <p>Description: <span id="description"></span></p>
+                </div>
+            </div>
+            <div class="text-center my-4">
+                <button class="m-3 btn btn-primary btn-lg" id="next-day-btn">Next day</button>
+                <button class="m-3 btn btn-secondary btn-lg" id="reenter">Enter another location</button>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" id="landing-page">
+        <form id="city-selector">
+            <h2 class="text-monospace readable_white-font">Whether the Weather is Worth a Drink?</h2>
+            <input class="m-4 text-center rounded text-monospace" type="text" placeholder="Enter a city" autofocus>
+        </form>
+    </div>
+    <div id="multiple-results">
+    <div id="half-width" class="text-center">
+        <h3 class="readable-white-font">Please select an option from below</h3>
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-head">
+                <th scope="col">City Name</th>
+                <th scope="col">State</th>
+                <th scope="col">Country</th>
+                </tr>
+            </thead>
+            <tbody id="possible-selections">
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <script src="app.js"></script>
