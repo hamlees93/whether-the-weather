@@ -1,0 +1,2 @@
+let index = (req, res) => {
+}
